@@ -1,0 +1,35 @@
+Estilos Globais
+    2:00 - não colocar css no _document.tsx
+        - usar o _app.tsx pois ele e chamado em todas as paginas
+
+Cabeçalho da aplicação
+    3:00 = todo arquivo dentro de pages no Next vira uma pagina. Não colocar estilos ou coisas que vc não quer que virem pagina la dentro
+
+Estrutura da Home
+    6:00 No Next Image e sempre bom informar uma largura e altura no html do componente para que a importação e redimensão funcione
+        <Image src={camiseta2} width={520} height={480} alt="" />
+
+Configurando conta Stripe
+    4:10 Criando Variável de ambiente
+
+Data Fetching no Next.js
+    ~7:00 getServerSideProps() estudar
+        método para renderizar código do lado do servidor
+            Somente utilizar em códigos necessários:
+                - dados sensíveis
+                - dados para bot do google SEO
+                - etc
+
+Navegação via Link
+    Utilização do componente link do react para navegação de <a>
+        -No stitches voce pode estilizar o próprio Link, assim:
+
+            import Link from "next/link";
+            export const Product = styled(Link, {})
+
+        Dessa forma não deu problema de hydration
+        Link impediu que fosse recarregados dados desnecessários ao clicar no produto
+
+SSG com parâmetro dinâmico
+    Para paginas geradas de formar dinâmica, é necessário o uso do getStaticPaths
+
