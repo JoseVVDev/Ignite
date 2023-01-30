@@ -1,0 +1,119 @@
+Estrutura Visual
+    Setup do projeto
+        🕐 4:15 🕐 
+            Quando utilizamos Styled Components com o typescript precisamos criar um arquivo de tipagem
+
+    Componente: Header
+        🕐 0:42 🕐 
+            Vc pode dar 'copy as svg no figma'
+        🕐 4:22 🕐
+            explicação da criação do header container e do content
+        🕐 8:40🕐
+            transition dentro do :hover ocorre somente no hover e quando o cursor sai do objeto ele transiçona instantaneamente
+
+    Componente: Summary
+        🕐 7:05 🕐
+            criando props no styled components para que o terceiro card fique com fundo verde
+    
+    Tabela de transações
+        🕐 2:20 🕐
+            FONT LIGATURES - plugin utilizado nas aulas
+
+    Componente: Search form
+        🕐 6:20 🕐
+            Desafio Paginação
+    
+    Criando um modal acessível
+        🕐 8:20 🕐
+            Explicação sobre o as componentes do modal do radix ui
+        
+        🕐 9:20 🕐
+            Explicação portal react
+                "Portals fornece uma forma elegante de renderizar um elemento filho dentro de um nó DOM que existe fora da hierarquia do componente pai."
+
+                https://pt-br.reactjs.org/docs/portals.html
+    
+    Modal de nova transação
+        🕐 6:20 🕐
+            hack css para centralizar elementos na tela
+            "   position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);   "
+
+        🕐 11:50 🕐
+            explicação sobre a caixa do botão de close ( X ) no focus ficar maior que o próprio ícone no focus devido ao font-size. Pode ser resolvido com font-size: 0, ou font-height: 0;
+
+    Criando radio button acessível
+        🕐 0:00 🕐 
+            utilizado o Radix React Radio group
+
+    Configurando JSON Server
+        JSON-server usar para simular backend
+
+    Realizando requisição HTTP
+         🕐 2:00 🕐 
+            para requisições de api em aplicativos react e bom lembrar de utilizar "useEffect()" para que os dados da requisição não sejam carregados múltiplas vezes a cada vez que o componente for renderizado
+        
+        🕐 2:40 🕐 
+            Respostas recebidas através do método fetch() não são recebidas da forma que gostaria. Vem em formato "ReadableStream" e precisa ser convertido para algum outro formato utilizando response.text() ou response.json()
+
+            🔰 Pesquisar o que são promises em Javascript
+
+        🕐 5:40 🕐
+            Dica de come reduzir o .then() nas promises
+
+        🕐 6:30 🕐 
+            Explicação de porque não pose usar async no useEffect() e como contornar isso
+
+        🕐 8:30 🕐
+            sempre lembrar de Tipar o estado quando cria-lo
+
+    Calculando resumo de transações
+
+        🕐 2:30 🕐 Uso do reduce() do JS
+
+    Formatando valores
+
+         🕐 0:00 🕐 uso do intl
+ 
+    Aplicando React Hook Form
+        React Hook Form e Zod
+    
+    Controlled components
+        Formulários, comenta sobre o radio group do radix
+
+    Criando nova transação
+        🕐 0:00 🕐
+        🕐 0:00 🕐
+        🕐 0:00 🕐
+
+    React Dev Tools
+        Ferramenta para monitoramento de componentes. Instalada no navegador. Aponta todos os componentes que foram renderizados. 
+
+    Aplicando Context Selectors
+
+    Aplicando o memo
+        🕐 0:00 🕐 Como funciona o fluxo do React.
+            Por que um componente renderiza?
+                - Hooks Changed (mudou estado, contexto, reducer);
+                - Props changed (mudou propriedades);
+                - Parent rerendered (componente pai renderizou);
+            
+            Qual o fluxo de renderização?
+                1. React recria o HTML da interface daquele componente
+                2. Compara a versão do HTML recriada com a versão anterior
+                3. SE mudou alguma coisa, ele reescreve o HTML na Tela
+
+        🕐 4:10 🕐 Utilização do componente Memo função usada para memorizar componente)
+
+            MEMO:
+
+            0. Hooks Changed, Props Changed (deep comparison)
+            0.1. Comparar com  a versão anterior dos hooks e props
+            0.2. SE mudou algo, ele vai permitir a nova renderização
+            
+            (SE mudou algo vai para o fluxo de renderização, SE NÃO nem sequer inicia o fluxo)
+
+
+            == NÃO COMETA O ERRO DE USAR MEMO EM TUDO ==
